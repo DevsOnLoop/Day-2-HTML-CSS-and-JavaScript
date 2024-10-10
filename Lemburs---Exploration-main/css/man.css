@@ -1,0 +1,49 @@
+.man {
+    display: flex;
+    align-items: center;
+    background-color: #001F3F; 
+    padding: 20px;
+    color: white;
+margin:0;
+overflow:hidden;
+}
+
+.photo-section {
+    position: relative;
+    flex: 1;
+    height:20vh;
+}
+
+.man-photo {
+    position: absolute;
+    top: -50px; 
+    left: 20px; 
+    width: 150px; 
+    height: auto;
+    background:none;
+}
+
+.text-section {
+    flex: 2;
+    padding-left: 20px;
+}
+.text-section p{
+    color:rgb(127, 139, 151);
+}
+.join-button {
+    /* background-color: #FFD700; */
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.join-button:hover {
+    background-color: #FFC300;
+    transform: scale(1.05);
+}
+.photo-section:hover{
+    transform: scale(1.05); 
+}
