@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+         .navbar
+        {
+            background-color: teal;
+            border-radius: 20px;
+        }
+        .btn
+        {
+            outline: auto;
+            color: greenyellow;
+            border-radius:35px;
+        }
+        #mid
+        {
+            background-color: rgb(173, 255, 47);
+            height: 450px;
+            width: 40%;
+            border-radius: 30px;
+            text-align: center;
+            font-size: larger;
+        }
+        #section2
+        {
+            font-size: 30px;
+        }
+        #img2
+        {
+            height: 450PX;
+            width: 690PX;
+            border-radius: 10%;
+        }
+        #hr
+        {
+            text-align: center;
+            font-size: 40px;
+        }
+        .btn2{
+            outline: rgb(13, 196, 55);
+            border-radius: 35px;
+            align-content: center;
+            background-color: rgb(173, 255, 47);
+        }
+        .heading
+        {
+            text-align: center;
+        }
+        .no-bold {
+            font-weight: normal;
+            font-size: 30px;
+            color: #35f332d3;
+        }
+        h2 {
+            text-align: center;
+            font-size: 50px;
+            font-family: serif;
+        }
+        .center-text {
+            text-align: center;
+        }
+        .rounded-rectangle {
+            width: 170px;
+            height: 45px;
+            background-color: #f9f8f8;
+            border-radius: 40px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            margin: 0 auto;
+        }
+        .rounded-rectangle::after {
+            font-size: 18px;
+            position: absolute;
+            right: 15px;
+        }
+        img {
+            height: 690px;
+        }
+        .container {
+            display: flex;  
+            justify-content: center; 
+            gap: 80px;  
+            margin-top: 10px;
+
+        }
+        .rounded-rectangle2 {
+            width: 300px;
+            height: 400px;
+            padding: 10px;
+            background-color: rgb(227, 227, 223);
+            border-radius: 40px;
+            font-family: serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            position: relative;
+        }
+        .rounded-rectangle3 {
+            width: 300px;
+            height: 400px;
+            padding: 10px;
+            background-color: #114f10;
+            border-radius: 40px;
+            font-family: serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+        }
+        .rounded-rectangle4{
+            width: 300px;
+            height: 400px;
+            padding: 10px;
+            background-color: #f1f181;
+            border-radius: 40px;
+           font-family: serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* text-align: center; */
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+        }
+        .rounded-rectangle2::after,
+        .rounded-rectangle4::after  {  
+            font-size: 24px;
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            columns: 50px;
+        }
+        .rounded-rectangle2::after {
+            color: #145a13;
+            bottom: 40px;
+        }
+        .rounded-rectangle3::after {
+            color: #8190f1;
+        }
+        .rounded-rectangle4::after {
+            color: #114f10;
+        }
+        .custom-color {
+            color: #f1f181; 
+        }
+        .rounded-rectangle5 {
+        width: 300px;
+        height: auto; 
+        padding: 20px;
+        background-color: #114f10;
+        border-radius: 40px;
+        font-family: serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: start;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        margin-left: 50px;
+        background-image: url(hara.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        }
+    .text-content {
+        width: calc(100% - 350px); 
+        padding-left: 30px;
+    }
+    .text-content h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .text-content p {
+        font-size: 16px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+       #icon
+       {
+        margin-left: 220px;
+        size: 50px;
+       }
+       .rounded-rectangle6{
+            width: 170px;
+            height: 45px;
+            
+            border-radius: 40px;
+            border: 2px solid #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+            margin: 0 auto;
+        }
+        .centered-text {
+            text-align: center; /* This centers only the paragraph text */
+            font-size: large;
+
+        }
+        .rounded-rectangle7{
+            width: 100px;
+            height: 40px;
+            background-color: #f9f8f8;
+            border-radius: 40px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            margin: 0 auto;
+        }
+        .testimonial-container {
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+    padding: 20px; 
+    width: 1250px;
+}
+.testimonial-box {
+    background-color: #f1f181; 
+    border-radius: 20px; 
+    padding: 30px; 
+    width: 800px;
+    position: relative; 
+    font-family: serif;
+    left: 20px;
+}
+.testimonial-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333; 
+    margin-bottom: 20px; 
+}
+.author {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6c6c6c; 
+}
+.quote-icon {
+    font-size: 40px;
+    position: absolute;
+    top: -2px;
+    left: 10px;
+    color: #333; 
+}
+.image-box img {
+    border-radius: 30px; 
+    width: 400px; 
+    height: 230px; 
+    right: 10px;
+    padding: 10px;
+}
+.rounded-rectangle8{
+            width: 1240px;
+            height: 350px;
+            background-color: #13280a;
+            border-radius: 40px;
+            border: 1px solid black;
+            justify-content: center;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        .centered-text2{
+           
+            color: #f1f181;
+            font-size: 50px;
+            top: 10%;
+        }
+    #img3
+    {
+       height: 720px;
+       width: 1260px; 
+    }   
+    body{
+        font-family: serif;
+    }    
+    #color
+    {
+        color: white;
+    }
+    #last
+    {
+        color: #145a13;
+        text-align: center;
+    }
+    #images2
+    {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        margin-left: 170px;
+    }
+    images
+    {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand">Sustain-Ability</a>
+          <form class="d-flex" role="search">
+            <button class="btn" type="submit">Get-Growing &#8599;</button>
+          </form>
+        </div>
+    </nav>
+    <br>
+    <span>
+    <div id="midmain" aria-colspan="2" class="container">
+        <div class="row">    
+            <div id="mid" class="col-sm-5">
+                <br>
+                <P id="section2"><b>Building a
+                <br> Greener <br> Tommorow, <br> Today</b></p>
+                <p>Join us in the fight against climate change <br> and help us create cities that thrive in <br> harmony with nature</p>
+                <button class="btn2" type="submit">Get-Growing &#8599;</button>
+            </div>
+            <diV class="col-sm-3" >
+                <span ><img id="img2" src="green.png"></span>
+            </diV>
+        </div>    
+    </div>    
+            </span>
+            <hr/>
+            <span id="hr"><marquee><h3>Design &#8226; Smart irrigation systems &#8226; Rooftop Farm</h3></marquee></span>
+            <hr/>
+            <br>
+            <div class="container1">
+    <h2 class="no-bold1"> Reimagining Urban Spaces & <br> Designing Green Cities of the <br> Future </h2>
+    <p class="center-text">At Sustainability, our mission is clear: to create urban spaces, yards and cities that <br>are smart, eco-friendly, and sustainable. We're committed to fighting climate <br>change and saving nature, one project at a time. Ready to see how you can <br>transform your environment? Schedule a free consultation today!</p>
+    <br>
+    <img id="images2" src="left1.jpg">
+    <img id="images2" src="left2.jpg">
+    <img id="images2" src="right1.jpg">
+    <img id="images2" src="right2.jpg">
+    <br>
+    <br>
+    <div class="rounded-rectangle">Free Planning Consult &#8599;</div>
+    </div>
+    <hr>
+    <img id="img3" src="1708841748770.png" alt="">
+    <div class="container"> 
+        <div class="rounded-rectangle2">
+            <p id="icon">&#8599</p>
+            <h3 class="no-bold1"><br>Global Environmental <br>Impact</h3>
+            <p> By integrating green spaces <br> and eco-friendly technologies <br>into urban environments, we <br> reduce carbon emissions, <br> improve air quality, and combat <br> the effects of climate change.</p>
+        </div>
+        <div class="rounded-rectangle3">
+            <br>
+            <p id="icon">&#8599</p>
+            <h3 class="no-bold custom-color">Improve Quality of Life for You & the World</h3>
+            <p>We provide sustainable <br> and renewable energy <br> solutions to help cities <br> and businesses <br> transition to green energy.</p>
+        </div>
+        <div class="rounded-rectangle4">
+            <p id="icon">&#8599</p>
+            <h3 class="no-bold1"> <br>Long-Term Savings: <br>For Your Wallet & <br>Earth </h3>
+            <p>Our projects involve <br> the local community to <br> ensure that the <br> sustainability goals <br> are achieved collectively.</p>
+        </div> 
+    </div>
+    <hr>
+    <div class="container">
+        <div class="rounded-rectangle5">
+            <h3 class="no-bold"> <br>Nourishing <br>  People & the <br>Planet </h3>
+            <p>Our vision is to lead the way in sustainable <br>urban design, creating cities that are resilient, livable, and flourishing.</p>
+            <div class="rounded-rectangle6">Free Planning Consult &#8599;</div>
+        </div>     
+        <div class="text-content">
+            <h3>Innovative Green Solutions</h3>
+            <p>At Sustainability, we specialize in transforming urban spaces into <br>green havens by incorporating innovative solutions such as rooftop <br>gardens, smart irrigation systems, green infrastructure design, and <br>more. Our goal is to enhance the quality of life for city dwellers while <br> minimizing our impact on the environment.</p>
+    
+            <h3>Sustainability as a Way of Life</h3>
+            <p>We believe that sustainability is not just a buzzword – it's a way of life. That's why our approach is rooted in collaboration, innovation, and a deep respect for nature. We work closely with communities, stakeholders, and policymakers to design customized solutions that meet the unique needs of each city.</p>
+    
+            <h3>Transforming Cities & Lives</h3>
+            <p>We work with cities and communities worldwide to promote sustainable urban development. We specialize in a wide range of projects, including green infrastructure design, rooftop garden installations, smart irrigation systems, and more.</p>
+        </div>
+    </div>
+    <div>
+        <br>
+        <hr>
+        <h2 class="no-bold1">Helping Cities & Communities  <br> Combat  Climate Change </h2>
+        <p class="centered-text">We're committed to fighting climate change  and saving nature. one project at a time. <br> Ready to see how you can transform your envronment? Schedule a free consultation <br>today!</p>
+    </div>
+    <div class="rounded-rectangle7">Join now &#8599;</div>
+    <div class="testimonial-container">
+        <div class="testimonial-box">
+            <p class="quote-icon">“</p>
+            <p class="testimonial-text">
+                Working with Sustain-ability was a game-changer for our city. Their innovative solutions not only helped us combat climate change but also revitalized our urban landscape.❞    
+            </p>
+            <p class="author">Mayor Emily Greene</p>
+        </div>
+        <div class="image-box">
+            <img src="images.jpg" alt="Mayor Emily Greene">
+        </div>
+    </div>
+    <div class="rounded-rectangle8">
+        <br>
+        <h3 class="centered-text2">Ready to transform your city into <br>a green paradise?</h3><br>
+        <p id="color">Schedule a free consultation with Sustain-ability and let's start building a brighter,<br> greener future together.</p> 
+        <br>
+        <br>
+        <div style=" background-color: transparent; outline: auto; height: 30px; width: 180px; margin-left: 550px; align-items: center; border-radius: 20px; color: white; ">Get your Free Consult &#8599;</div>
+    </div>
+    <br>
+    <p id="last">@2024 Sustainability, All rights reserved. <u> Privacy Policy</u> Created with LeadPages</p>
+    <h3 id="last">Sustain-ability</h3>
+</body>
+</html>
