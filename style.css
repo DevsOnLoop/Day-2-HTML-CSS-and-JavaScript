@@ -1,0 +1,664 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(243, 240, 240);
+}
+/* page 1 */
+
+.page1{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page1 .image1{
+    width: 100%;
+    height: 60vh;
+}
+.image1 .image{
+    width: 100vw;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+}
+.image::after{
+    content: "";
+    width: 100vw;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+}
+.imgtxt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+.top{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top #logo{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #50e1be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#name{
+    position: relative;
+    top: 5px;
+    color: white;
+    font-family:Monospace;
+    font-size: 0.9rem;
+
+}
+#service{
+    color: rgb(173, 173, 173);
+    font-size: 0.4rem;
+    position: relative;
+    top:6px;
+}
+#txt1{
+    color: White;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    top: 40px;
+}
+#line{
+    width: 15%;
+    height: 2px;
+    background-color: #50e1bf77;
+    position: relative;
+    top: 80px;
+}
+#line2{
+    width: 15%;
+    height: 2px;
+    background-color: #69e1c5;
+    position: relative;
+    top: 80px;
+
+}
+#txt2{
+    position: relative;
+    top: 120px;
+    text-align: center;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.767);
+}
+#b1{
+    position: relative;
+    top:30%;
+}
+.booking{
+    background-color: #69e1c5;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 2.5rem;
+    width: 200px;
+    border: none;
+    border-radius: 2px;
+    color: rgb(23, 23, 23);
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar p{
+    color: white;
+    font-size: 12px;
+}
+#fortune{
+    color: rgb(221, 218, 218);
+}
+
+.navbar pre{
+    color: white;
+    font-size: 8px;
+    
+}
+h2{
+    text-align: center;
+    position: relative;
+    top: 25px;
+    color: rgb(53, 53, 53);
+}
+#choose{
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    top: 45px;
+
+}
+#content{
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 120px;
+    justify-content: center;
+}
+#content .boxes{
+    width: 25%;
+    height: 60%;
+    padding: 5px;
+    margin: 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 247, 247);
+}
+.boxes .logo{
+    color: #69e1c5;
+    align-self: center;
+    font-size: 1.7rem;
+}
+.boxes .p1{
+    font-size: 12px;
+    text-align: center;
+    margin: 7px 0 7px 0;
+    font-weight: 550;
+    color: rgb(61, 61, 61);
+}
+.boxes .p2{
+    font-size: 8px;
+    color: rgb(76, 75, 75);
+}
+.boxes a{
+    color:rgb(150, 150, 150);
+    font-size: 8px;
+    position: relative;
+    top: 15px;
+}
+#b2{
+    position: relative;
+    top: 500px;
+}
+#action{
+    color: black;
+    font-size: 20px;
+    position: relative;
+    top: 530px;
+}
+#action2{
+    color: #252525;
+    font-size: 10px;
+    position: relative;
+    top: 545px;
+}
+
+#line3{
+    width: 15%;
+    height: 2px;
+    background-color: #69e1c5;
+    position: relative;
+    top: 565px;
+
+}
+video{
+    width: 80vw;
+    height: 50vh;
+    position: relative;
+    top: 550px;
+}
+.play{
+    color: black;
+    background-color: #69e1c5;
+    width: 60px;
+    height: 40px;
+    position: relative;
+    top: 350px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+video:hover +.play{
+    visibility: hidden;
+}
+#b3{
+    position: relative;
+    top: 490px;
+
+}
+.page2 #meet{
+    font-size: 20px;
+    position: relative;
+    top: 530px;
+    text-align: start;
+    margin-left: 40px;
+    color: #252525;
+}
+#meet2{
+    font-size: 10px;
+    position: relative;
+    top: 530px;
+    padding: 15px;
+    margin-left: 25px;
+    color: #393939;
+}
+#meet3{
+    font-size: 10px;
+    position: relative;
+    top: 530px;
+    margin-left: 40px;
+    color: #1e1d1d;
+}
+#line4{
+    width: 15%;
+    height: 2px;
+    background-color: #69e1c5;
+    position: relative;
+    top: 550px;
+    margin-left: 40px;
+}
+.people{
+    position: relative;
+    top: 575px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+
+}
+.people .person{
+    width: 25%;
+    height: 45vh;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#person1 #image{
+    width: 80px;
+    height: 80px;
+    background-image: url('person1.jpg');
+    filter: grayscale(100%);
+    background-size: cover;
+}
+#person2 #image2{
+    width: 80px;
+    height: 80px;
+    background-image: url('person2.jpg');
+    filter: grayscale(100%);
+    background-size: cover;
+}
+#person3 #image3{
+    width: 80px;
+    height: 80px;
+    background-image: url('person3.jpg');
+    filter: grayscale(100%);
+    background-size: cover;
+
+}
+.people .name{
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 0;
+}
+.people .status{
+    font-size: 8px;
+    text-align: center;
+    color: rgb(26, 25, 25);
+}
+.people .descrip{
+    font-size: 8px;
+    margin-top: 10px;
+    color: #313131;
+    line-height: 1.8em;
+}
+#b4 {
+    position: absolute;
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+.page3{
+    background-color: #0f0a05;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.page3 #heading{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+#line5{
+    width: 15%;
+    height: 2px;
+    background-color: #69e1c5;
+    position: relative;
+    top: 60px;
+    align-self: center;
+}
+.page4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#people{
+    width: 100vw;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.personas{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.personas .content{
+    width: 50vw;
+    margin-left: 25px;
+}
+.personas #pic1{
+    width: 60px;
+    height: 60px;
+    background-image: url('per2.jpg');
+    background-size: contain;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+.personas #pic2{
+    width: 60px;
+    height: 60px;
+    background-image: url('per3.jpg');
+    background-size: contain;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+.personas #pic3{
+    width: 60px;
+    height: 60px;
+    background-image: url('per1.jpg');
+    background-size: contain;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+.personas .content{
+    font-size: 10px;
+    color: white;
+    position: relative;
+}
+.content .names{
+    margin-top: 10px;
+    font-size: 9px;
+    color: rgb(196, 196, 196);
+}
+#b5{
+    position: relative;
+    top: 50px;
+    z-index: 2;
+}
+
+footer{
+    margin-top: 10px;
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 80px;
+    background-color: #0f0a05;
+    color: rgb(164, 164, 164);
+    font-size: 8px;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+}
+#line6{
+    width: 15%;
+    height: 2px;
+    background-color: #69e1c5;
+    position: relative;
+    align-self: center;
+}
+#oneliner{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+    top: 30px;
+    padding: 0 20px 0 20px;
+}
+.socials{
+    color: white;
+    font-size: 10px;
+    width: 100px;
+}
+.socials i{
+    margin-right: 9px;
+}
+#bottom{
+    position: relative;
+    top: 50px;
+}
+
+/* media queries for desktop adjustment */
+
+@media (min-width:720px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .page1 .image1{
+        height: 70vh;
+    }
+    .image::after{
+        height: 70vh;
+    }
+    .top #logo{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .top #name{
+        font-size: 1.2rem;
+    }
+    #line,#line2,#line3,#line4,#line5,#line6{
+        width: 10%;
+    }
+    #txt1{
+        top: 50px;
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+    #line{
+        top: 90px;
+    }
+    #txt2{
+        top: 140px;
+        font-size: 14px;
+        color: rgb(186, 186, 186);
+        letter-spacing: 1.5px;
+    }
+    .page1 h2{
+        font-size: 28px;
+        top: 30px;
+        letter-spacing: 1.5px;
+    }
+    #b1{
+        top: 250px;
+    }
+    #choose{
+        font-size: 14px;
+        color: #393939;
+    }
+    #content{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        width: 70%;
+    }
+    #content .boxes{
+        width: 150px;
+        margin-bottom: 50px;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .boxes .logo{
+        font-size: 2rem;
+    }
+    .boxes .p1{
+        font-size: 17px;
+        width: 90px;
+        align-self: center;
+        margin-top: 14px;
+        color: #414141;
+    }
+    .boxes .p2{
+        font-size: 10px;
+        margin-top: 12px;
+    }
+    .boxes a{
+        font-size: 9px;
+    }
+    #b2{
+        top: 280px;
+    }
+    #action{
+        font-size: 28px;
+        top: 340px;
+        letter-spacing: 1.5px;
+    }
+    #action2{
+        font-size: 14px;
+        top: 360px;
+        letter-spacing: 1.5px;
+    }
+    #line3{
+        top: 390px;
+    }
+    video{
+        top: 450px;
+    }
+    .play{
+        top: 250px;
+    }
+    .page2{
+        padding-top: 70px;
+        width: 90vw;
+        align-self: center;
+        padding-bottom: 50px;
+    }
+    .page2 #meet{
+        font-size: 28px;
+    }
+    #meet2{
+        font-size: 15px;
+        letter-spacing: 1.3px;
+        word-spacing: 2px;
+        width: 70vw;
+        top: 540px;
+    }
+    #meet3{
+        font-size: 15px;
+        top: 545px;
+    }
+    #line4{
+        top: 565px;
+    }
+    .people{
+        top:620px;
+        justify-content: space-evenly;
+        padding-bottom: 480px;
+    }
+    #person1,#person2,#person3{
+        width: 150px;
+        height: 400px;
+    }
+    #person1 #image{
+        width: 100px;
+        height: 100px;
+    }
+    #person2 #image2{
+        width: 100px;
+        height: 100px;
+    }
+    #person3 #image3{
+        width: 100px;
+        height: 100px;
+    }
+    .person .name{
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    .person .status{
+        font-size: 10px;
+    }
+    .person .descrip{
+        font-size: 12px;
+    }
+    .page3 #heading{
+        font-size:28px;
+    }
+    .page4 .descriptions{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .page4 .names{
+        font-size: 12px;
+    }
+    .page4 .personas{
+        width: 50vw;
+        padding-bottom: 20px;
+    }
+    footer{
+        padding-top: 100px;
+        height: 300px;
+        width: 100vw;
+    }
+    #oneliner{
+        font-size: 12px;
+    }
+    .socials{
+        font-size: 16px;
+    }
+    .socials i{
+        margin-right: 17px;
+        cursor: pointer;
+    }
+    #bottom #logo{
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+
+
+
