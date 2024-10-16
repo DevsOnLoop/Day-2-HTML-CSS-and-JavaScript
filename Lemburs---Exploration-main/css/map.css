@@ -1,0 +1,37 @@
+.info-container {
+    display: flex; 
+    background-color: #f0f0f0; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    margin: 20px; 
+}
+
+.map-container {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.map-container img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.text-container {
+    flex: 1; 
+}
+
+.text-container h2 {
+    margin-bottom: 10px;
+}
+
+.text-container p {
+      color: rgb(127, 139, 151); 
+}
+.text-container div:hover{
+  color:#87CEEB;
+}
+.head:hover{
+    transform: scale(1.05);
+}

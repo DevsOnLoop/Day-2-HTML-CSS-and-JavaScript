@@ -1,0 +1,28 @@
+.containere {
+    margin-top: 100px;
+    display: flex;
+    flex-direction:row;
+    height: auto;
+    padding: 20px; 
+}
+.part {
+    flex:1;
+    padding: 10px; 
+    margin: 0 20px;
+    display:flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+.heading {
+    font-weight: bold; 
+    font-size: 1.5em; 
+    margin-bottom: 15px; 
+}
+.part .head:hover{
+    color:#87CEEB;
+}
+.part p{
+    color: rgb(127, 139, 151);
+    margin-bottom: 15px; 
+}
+

@@ -1,0 +1,21 @@
+.image-gallery {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    margin: 20px 0; 
+}
+
+.image-item {
+    text-align: center; 
+    margin: 0 10px; 
+}
+
+.image-item img {
+    max-width:100%;
+    height: auto; 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+.image-item:hover{
+    transform: scale(1.05);
+}

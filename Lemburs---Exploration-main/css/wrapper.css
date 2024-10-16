@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:30vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.bold-text {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px; 
+    color:rgb(0, 0, 75);
+}
+.normal-text {
+   width:100vh;
+    font-size: 18px;
+    color:rgb(127, 139, 151);
+}
