@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+        <h1>Random Password Generator</h1>
+        <input type="text" id="password">
+        <div class="buttons">
+            <button id="generate">Generate</button>
+            <button id="copy">Copy</button>
+        </div>
+    </div></div>
+    <div class="line"></div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p><b>DevsOnLoop
+                    <br>
+                    Education
+                    <br>
+                    A Developer club in BIET Jhansi is here to ignite your passion for development and connect you with a like-minded community.</p>
+                    <p>Email: devsonloop@gmail.com</p>
+            </div>
+            <div class="sec">
+            <div class="footer-Img">
+               <img src="https://avatars.githubusercontent.com/u/182344961?v=4" alt="">
+            </div>
+
+            <div class="footer-contact">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://x.com/DevsOnLoop?t=LOOcvACr3xJWJX_IV_-PRQ&s=08"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/devsonloop/profilecard/?igsh=dTY2YnRhOW02M3Vk"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/devsonloopclub/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div></div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DevsOnLoop. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('generate').addEventListener('click', function() {
+    const length = 12;
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let password = '';
+    for (let i = 0; i < length; i++) {
+        password += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    document.getElementById('password').value = password;
+});
+
+document.getElementById('copy').addEventListener('click', function() {
+    const passwordField = document.getElementById('password');
+    passwordField.select();
+    passwordField.setSelectionRange(0, 99999);
+    document.execCommand('copy');
+    alert('Password copied to clipboard!');
+});
+
+    </script>
+</body>
+</html>
