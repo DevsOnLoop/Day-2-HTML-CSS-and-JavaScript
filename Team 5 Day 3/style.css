@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+h1 {
+    background-color: #fff;
+    color: #081b31;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.choice {
+    height: 150px;
+    width: 150px;
+
+}
+.choice img{
+    width: 100%;
+    height: 100%;
+}
+.choice:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+   padding: 30px;
+
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    gap: 5rem;
+}
+
+#your-score,
+#computer-score {
+    font-size: 4rem;
+}
+
+#msg {
+    margin-top: 10px;
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.result {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+
+}
+
+.btn {
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: min(500px, 15vh);
+    display: none;
+
+}
+
+button {
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+button:hover {
+    background: rgb(53, 53, 53);
+}
+
+@media screen and (max-width: 550px) {
+    .choices {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.leaderboard{
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
+}
+#msg{
+    padding: 10px;
+}
