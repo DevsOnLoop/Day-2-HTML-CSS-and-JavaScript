@@ -1,0 +1,74 @@
+
+#a{
+    height:50rem;
+    width: 80rem;
+    background-color: antiquewhite;
+    margin: 2rem;
+}
+#b{
+    height: 40rem;
+    width: 38rem;
+    background-color: aqua;
+    margin-top: 5rem;
+    background-image: url(iphone.jpg);
+    background-size:contain;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+#c{
+    padding: 0rem;
+    height: 20rem;
+    width: 80rem;
+    display: flex;
+    flex-direction: row;
+}
+#d{
+    padding: 0rem;
+    height: 40rem;
+    width: 38rem;
+    background-color:antiquewhite;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+#e{ 
+    color:#3C99DC;
+    font-size: xxx-large;
+    font-weight: 800;
+    margin-top: 6rem;
+}
+#f{
+    padding: 0%;
+    font-size: x-large;
+    font-weight: 700;
+}
+#g{
+    font-size: x-large;
+    font-weight: 400;
+}
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.2rem;
+}
+
+.time-box {
+    margin-top: 3rem;
+    background-color: #1a3c5a;
+    color: #fff;
+    padding: 1rem;
+    width: 5.5rem;
+    border-radius: 0.5rem;
+}
+
+.time-box span {
+    font-size:x-large;
+    font-weight:900;
+    display: inline;
+}
+
+.time-box p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #a2d5f2;
+}
