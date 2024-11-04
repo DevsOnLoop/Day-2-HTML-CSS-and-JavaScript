@@ -1,0 +1,30 @@
+.heading {
+    text-decoration: underline;
+    text-align: center;
+    padding: 0px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 100px; 
+    padding: 0px;
+}
+
+button {
+    background-color: antiquewhite; 
+    color: black; 
+    padding: 10px ;
+    font-size: 18px; 
+    cursor: pointer; 
+    margin: 10px auto; 
+    display: block; 
+    border: none; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d1c6a2;
+}
+
