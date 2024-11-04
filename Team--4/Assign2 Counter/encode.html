@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #515151;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #b8b8b8;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px 2px #ffffff;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #counter {
+            font-size: 55px;
+            margin: 20px 0;
+            color: black;
+        }
+
+        .buttons button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            background-image: linear-gradient(#f6ff00, #95e1ff);
+        }
+
+        .decrease {
+            background-image: linear-gradient(rgb(137, 1, 1),rgb(211, 105, 0));
+            color: #fff;
+        }
+
+        .reset {
+            background-image: linear-gradient(rgb(60, 60, 60), #999999);
+            color: #fff;
+        }
+
+        .increase {
+            background-image: linear-gradient(rgb(0, 76, 0),#49c408);
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Counter</h1>
+        <div id="counter">0</div>
+        <div class="buttons">
+            <button class="decrease" onclick="decrement()">Decrease</button>
+            <button class="reset" onclick="reset()">Reset</button>
+            <button class="increase" onclick="increment()">Increase</button>
+        </div>
+    </div>
+
+    <script>
+        let count = 0;
+
+        function increment() {
+            count++;
+            updateCounter();
+        }
+
+        function decrement() {
+            count--;
+            updateCounter();
+        }
+
+        function reset() {
+            count = 0;
+            updateCounter();
+        }
+
+        function updateCounter() {
+            const counterElement = document.getElementById("counter");
+            counterElement.innerText = count;
+            if (count > 0) {
+                counterElement.style.color = "green";
+            } else if (count < 0) {
+                counterElement.style.color = "red";
+            } else {
+                counterElement.style.color = "black";
+            }
+        }
+    </script>
+</body>
+</html>
