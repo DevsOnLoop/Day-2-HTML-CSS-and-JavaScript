@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f0f9;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 0px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.callback-btn {
+    background-color: transparent;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.callback-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.header-content{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.paragraph{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.cols{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content{
+    height: 50%;
+    width: 50%;
+}
+
+.clients{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.clients-logo{
+    width: 23%;
+    height: 130px;
+}
+
+.services{
+    margin-top: 30px;
+    width: 100%;
+    height: 800px;
+}
+
+.links,.form{
+    height: 100%;
+    width: 50%;
+}
+
+.form{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 80px;
+}
+
+.form h1{
+    word-spacing: 2px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    color: darkblue;
+    font-weight: 300;
+}
+
+.form h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 200;
+    opacity: 0.7;
+}
+
+.input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-color: aqua;
+}
+
+.form button{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+}
+
+.team{
+    height: 400px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team div{
+    height: 100%;
+    width: 50%;
+}
+
+.team-members{
+    margin-top: 50px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-members .member{
+    height: 50%;
+    width: 50%;
+}
+
+.culture{
+    margin-top: 50px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.culture div{
+    height: 100%;
+    width: 50%;
+}
+
+.passion-photo{
+    height: 100%;
+    width: 100%;
+}
+
+.contennt{
+    padding-left: 120px;
+    padding-right: 120px;
+    
+}
+
+.content h1{
+    padding-top: 100px;
+    margin-bottom: 20px;
+    color: darkblue;
+    font-weight: 400;
+}
+
+.content h4{
+    color: grey;
+    font-weight: 100;
+    word-spacing: 8px;
+}
+
+.content{
+    margin-bottom: 10px;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.clients-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.cursor:hover{
+    cursor: pointer;
+    translate: -5px;
+    transition: translate 0.3s ease-in;
+}
+
+.member div{
+    display: inline-block;
+    
+}
+
+.text{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.text img{
+        float: left; /* This floats the image to the left side */
+        margin-right: 15px; /* Adds space between the image and text */
+}
+
+.about{
+        text-align: justify; /* Aligns the text evenly */
+}
+
+.member-photo{
+    width: 30px;
+}
+
+.member{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.culture-content{
+    text-align: left;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 180px;
+}
+
+.culture-content,.team-content h4,h1{
+    margin-bottom: 30px;
+}
+
+.culture-content,.team-content h5{
+    letter-spacing: 2px;
+    color: grey;
+    word-spacing: 5px;
+}
+
+.hand-shaking{
+    height: 100%;
+    width: 100%;
+}
+
+.photo{
+    padding: 30px;
+}
+
+.team-content{
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 70px;
+}
+
+.footer{
+    height: 300px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.footer-items{
+    height: 100%;
+    width: 33.33%;
+    padding-left: 70px;
+    padding-top: 70px;
+}
+
+.footer-items h5{
+    letter-spacing: 1.5px;
+    word-spacing: 4px;
+}
+
+.culture-photo{
+    padding: 30px;
+}
+
+.services{
+    margin-left: 350px;
+}
