@@ -1,0 +1,33 @@
+.adjacent-container {
+    display: flex;
+    align-items: flex-start; 
+    margin: 20px;
+}
+
+.item-list {
+    flex: 1; 
+    padding: 20px; 
+    margin-right: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.item-list ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.item-list li {
+    margin-bottom: 22px;
+    font-weight:200;
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+}
+ul .health:hover{
+    color:#ff4500;
+}

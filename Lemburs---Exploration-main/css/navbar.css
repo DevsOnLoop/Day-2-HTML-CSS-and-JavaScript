@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: black;
+}
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+    font-size:15px;
+    align-items: center; 
+}
+.nav-links a {
+    color: slategray;
+    text-decoration: none;
+    display: flex; 
+    align-items: center; 
+}
+ .nav-links :hover{
+    color:black;
+ }
+.login {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.material-icons {
+    font-size: 20px; 
+    margin-left: 5px; 
+}
+.active:hover{
+    color:black;
+}
