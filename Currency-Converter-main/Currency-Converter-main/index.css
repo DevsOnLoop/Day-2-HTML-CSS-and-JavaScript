@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #47e9e9;
+}
+.convert{
+    background-color: aliceblue;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0,0.5);
+    padding: 42px;
+    text-align: center;
+    
+}
+.convert h1{
+    margin-bottom: 40px;
+}
+.inputc{
+    margin-bottom:40px;
+    display: flex;
+    flex-direction:column; 
+    gap: 5px;
+}
+.outputc{
+    margin-bottom:40px;
+    display: flex;
+    flex-direction:column; 
+    gap: 5px;
+}
+
+
+.arrow{
+    margin-bottom: 30px;
+}
