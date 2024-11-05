@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, white, #197BFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.alarm-container {
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px black;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.time-display {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.time-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.time-input input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 2px solid #D1D5DB;
+    border-radius: 5px;
+}
+
+.add-alarm-btn {
+    background-color: #197BFF;
+    color: white;
+    border: none;
+    border-radius: 1.5em;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.add-alarm-btn:hover {
+    background-color: #155dbf;
+}
+
+.alarm-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.alarm-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333333;
+}
+.toggle-switch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left:100px;
+}
+
+input[type=checkbox]{
+	height: 0px;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	height: 25px;
+    width :50px;
+	background: #E5E7EB;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 2px;
+	width: 20px;
+	height: 20px;
+	background: #197BFF;
+	border-radius: 20px;
+	transition: 0.5s;
+}
+
+input:checked + label {
+	background: #90bff5;
+}
+
+input:checked + label:after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 50px;
+}
+.trash-icon {
+    cursor: pointer;
+    margin-bottom:10px;
+}

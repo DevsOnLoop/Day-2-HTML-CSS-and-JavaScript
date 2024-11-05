@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm app</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="alarm-container">
+        <div class="time-display" id="alarm"></div>
+
+        <div class="time-input">
+            <input type="number" value="19" min="0" max="23" id="hours">
+            <input type="number" value="07" min="0" max="59" id="minutes">
+        </div>
+
+        <button class="add-alarm-btn" onclick="addAlarm()">Add Alarm</button>
+
+        <div class="alarm-list" id="alarm-list">
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
